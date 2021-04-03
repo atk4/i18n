@@ -8,7 +8,7 @@
         "internationalization",
         "i18n",
         "atk4",
-        "agile ui",
+        "agile ui"
     ],
     "homepage": "https://github.com/atk4/i18n",
     "prefer-stable": true,
