@@ -93,7 +93,7 @@ class Service
      *      /- fr
      *
      * File name must follow format: {domain}.{locale}.{file format}: btn.en.php or btn.en.yml
-     * of when using the int icu format: {domain}+int-icu.{locale}.{file format}: btn+intl-icu.en.php
+     * of when using the intl icu format: {domain}+intl-icu.{locale}.{file format}: btn+intl-icu.en.php
      *
      * Read more on the ice message format: https://symfony.com/index.php/doc/current/translation/message_format.html
      */
