@@ -1,0 +1,4 @@
+# Yaml format sample.
+modal:
+  # Use as _t('modal.save', [], 'btn')
+  save: Enregistrer et Fermer
