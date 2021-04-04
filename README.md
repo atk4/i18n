@@ -66,19 +66,19 @@ The path to the directory where your resource files are located. In order to loa
 correctly, this directory must be organized per locale.
 
 ```
-\- languages
-    \- en
-        \- messages.en.php
-        \- messages+intl-icu.en.php
-    \- en_US
-        \- messages.en_US.php
-        \- messages+intl-icu.en_US.php
-    \- fr
-        \- messages.fr.php
-        \- messages+intl-icu.fr.php
-    \- fr_FR
-        \- messages.fr_FR.php
-        \- messages+intl-icu.fr_FR.php
+├── languages
+│   ├── en
+│   │   ├── messages.en.php
+│   │   └──  messages+intl-icu.en.php
+│   ├── en_US
+│   │   ├── messages.en_US.php
+│   │   └──  messages+intl-icu.en_US.php│   ├── images
+│   ├── fr
+│   │   ├── messages.fr.php
+│   │   └──  messages+intl-icu.fr.php
+│   ├── fr_FR
+│   │   ├── messages.fr_FR.php
+│   │   └──  messages+intl-icu.fr_FR.php
 ```
 
 By specifing the languages path, the service will automatically load all resources
