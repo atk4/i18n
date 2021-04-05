@@ -72,7 +72,7 @@ correctly, this directory must be organized per locale.
 │   │   └── messages+intl-icu.en.php
 │   ├── en_US
 │   │   ├── messages.en_US.php
-│   │   └── messages+intl-icu.en_US.php│   ├── images
+│   │   └── messages+intl-icu.en_US.php
 │   ├── fr
 │   │   ├── messages.fr.php
 │   │   └── messages+intl-icu.fr.php
