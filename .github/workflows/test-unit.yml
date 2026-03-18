@@ -16,9 +16,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['latest']
+        # php: ['latest']
         # type: ['Phpunit']
-        type: []
         include:
           - php: 'latest'
             type: 'CodingStyle'
