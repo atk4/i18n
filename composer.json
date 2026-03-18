@@ -15,6 +15,7 @@
     "config": {
         "sort-packages": true
     },
+    "version": "1.1",
     "authors": [
         {
             "name": "Alain Belair",
@@ -23,9 +24,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.3.0",
-        "symfony/translation": "^4.0|^5.0",
-        "symfony/config": "^4.0|^5.0"
+        "php": ">=7.4 < 8.6",
+        "symfony/translation": ">=4 <=8",
+        "symfony/config": ">=4 <=8"
     },
     "autoload": {
         "files": [ "src/Resource/functions.php" ],
