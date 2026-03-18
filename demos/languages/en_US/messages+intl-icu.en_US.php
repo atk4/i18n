@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Message in Intl ICU format.
  * Using intl-icu require resource file to be name accordingly.

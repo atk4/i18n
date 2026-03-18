@@ -1,8 +1,8 @@
 {
     "name": "atk4/i18n",
     "description": "Symfony Translation component Interface for Atk4",
-    "type": "library",
     "license": "MIT",
+    "type": "library",
     "keywords": [
         "translation",
         "internationalization",
@@ -10,28 +10,36 @@
         "atk4",
         "agile ui"
     ],
-    "homepage": "https://github.com/atk4/i18n",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true
-    },
-    "version": "1.1",
     "authors": [
         {
             "name": "Alain Belair",
             "email": "belair.alain@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "homepage": "https://github.com/atk4/i18n",
     "require": {
-        "php": ">=7.4 < 8.6",
-        "symfony/translation": ">=4 <=8",
-        "symfony/config": ">=4 <=8"
+        "php": ">=7.4 <8.6",
+        "symfony/config": "^4.4 || ^5.1 || ^6.0 || ^7.0 || ^8.0",
+        "symfony/translation": "^4.4 || ^5.1 || ^6.0 || ^7.0 || ^8.0"
     },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.13",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
-        "files": [ "src/Resource/functions.php" ],
         "psr-4": {
             "Atk4\\I18n\\": "src/"
-        }
+        },
+        "files": [
+            "src/Resource/functions.php"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
     }
 }

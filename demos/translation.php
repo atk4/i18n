@@ -2,17 +2,19 @@
 
 declare(strict_types=1);
 
-use function Atk4\I18n\Resource\_t;
 use Atk4\I18n\Service;
 use Atk4\I18n\T;
 use Atk4\Ui\App;
 use Atk4\Ui\Header;
+use Atk4\Ui\Layout\Admin;
 use Atk4\Ui\Table;
+
+use function Atk4\I18n\Resource\_t;
 
 require_once __DIR__ . '../../../autoload.php';
 
 $app = new App(['title' => 'Translation addon']);
-$app->initLayout([\Atk4\Ui\Layout\Admin::class]);
+$app->initLayout([Admin::class]);
 
 Service::init('fr_FR');
 Service::addResource(__DIR__ . '/languages', 'fr_FR', 'php');
@@ -40,7 +42,7 @@ $messages = [
         'organizer_gender' => 'other',
     ])],
     ['desc' => 'publish_at using datetime object', 'msg' => T::from('published_at', [
-        'publication_date' => new \DateTime('2021-01-25 14:30:00'),
+        'publication_date' => new DateTime('2021-01-25 14:30:00'),
     ])],
     ['desc' => 'values_of_object using value 10000', 'msg' => T::from('value_of_object', [
         'value' => 10000,

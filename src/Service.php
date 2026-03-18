@@ -1,4 +1,5 @@
 <?php
+
 /**
  * I18n Service.
  */
@@ -40,9 +41,7 @@ class Service
         'qt' => QtFileLoader::class,
     ];
 
-    private function __construct()
-    {
-    }
+    private function __construct() {}
 
     public static function getInstance(): self
     {
@@ -65,7 +64,7 @@ class Service
      *
      * In development mode, you can set $clearCache to true to delete previous caches.
      */
-    public static function init(string $locale, MessageFormatterInterface $formatter = null, string $cachePath = null, array $cacheOptions = [], bool $clearCache = false): void
+    public static function init(string $locale, ?MessageFormatterInterface $formatter = null, ?string $cachePath = null, array $cacheOptions = [], bool $clearCache = false): void
     {
         if ($clearCache && $cachePath) {
             $iterator = new \FilesystemIterator($cachePath);
