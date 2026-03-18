@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Create translatable message
  * that can be translate later.
