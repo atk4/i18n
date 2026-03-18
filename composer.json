@@ -15,7 +15,6 @@
     "config": {
         "sort-packages": true
     },
-    "version": "1.1",
     "authors": [
         {
             "name": "Alain Belair",
